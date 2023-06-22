@@ -37,8 +37,8 @@ const Page = () => {
     <div>
       <Hero />
       <section className=" grid-cols-5 gap-4 px-4 md:px-10 lg:px-20 hidden lg:grid mt-16 h-14">
-        {companies.map((company) => (
-          <div className="bg-blackSecundary flex items-center justify-center">
+        {companies.map((company, index) => (
+          <div className="bg-blackSecundary flex items-center justify-center" key={index}>
             <Image
               className={`${company.company === 'GBM+' && 'w-20'}`}
               src={company.url}
