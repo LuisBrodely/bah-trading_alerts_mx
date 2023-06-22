@@ -112,7 +112,7 @@ export default function Navbar() {
                 <div className="py-2">
                   <a
                     href="#"
-                    className="mt-4 block rounded-md py-2.5 px-3 text-sm font-medium leading-6 text-whitePrimary bg-greenLogo text-center"
+                    className="mt-4 block rounded-md py-2.5 px-3 text-sm font-medium leading-6 text-whitePrimary bg-purpleLogo text-center"
                   >
                     Suscribete
                   </a>
