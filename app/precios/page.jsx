@@ -36,7 +36,7 @@ export default function Precios() {
   return (
     <>
     <div className="">
-      <div className="relative overflow-hidden pt-20 pb-96 lg:pt-24">
+      <div className="relative overflow-hidden pt-16 pb-96 lg:pt-24">
         <div className="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-4xl">
             <h2 className="text-lg font-semibold leading-8 text-greenLogo">MEMBRESIAS</h2>
