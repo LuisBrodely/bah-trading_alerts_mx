@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="text-center text-gray-400 text-base tracking-[.4em] mt-4 mb-3 lg:mb-5 font-semibold lg:text-left md:text-lg">
           Trading Alerts MX
         </h1>
-        <h2 className="text-whitePrimary text-5xl md:text-5xl text-center sm:font-extrabold font-bold lg:text-left xl:text-5xl">
+        <h2 className="text-whitePrimary text-5xl md:text-5xl text-center font-extrabold md:font-bold lg:text-left xl:text-5xl">
           Invierte con Inteligencia,
           <br />
           Decide con Precisión
