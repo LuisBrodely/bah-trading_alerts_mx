@@ -13,7 +13,7 @@ const navigation = [
   { name: "Sobre Nosotros", page: '/' },
   { name: "Precios", page: '/precios'},
   { name: "Resultados", page: '/resultados' },
-  { name: "Cursos", page: '/cursos' },
+  { name: "Cuenta Discrecional", page: '/cuenta' },
 ];
 
 export default function Navbar() {
