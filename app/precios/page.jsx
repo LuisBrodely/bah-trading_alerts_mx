@@ -8,7 +8,7 @@ const tiers = [
     id: 'tier-hobby',
     name: 'Mensual',
     href: '#',
-    priceMonthly: 25,
+    priceMonthly: 50,
     description: 'Con nuestro plan de pago recibes en el grupo de Discord alertas en tiempo real con entradas y salidas operaciones del mismo día y largo plazo.',
     features: [
       'Análisis del mercado',
@@ -17,6 +17,17 @@ const tiers = [
       'Comunidad de Traders',
       'Sesiones en Vivo de Trading',
       'Guía paso a paso'
+    ],
+  },
+  {
+    id: 'tier-team',
+    name: 'Gratis',
+    href: '#',
+    priceMonthly: 0,
+    description: 'Con nuuestro plan gratuito puedes comenzar en el mundo del Trading,  por medio de analisis del mercado junto con noticias de interes.',
+    features: [
+      'Análisis del mercado',
+      'Reporte Semanal en donde explicamos nuestro plan para la siguiente semana'
     ],
   },
   {

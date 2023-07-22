@@ -38,8 +38,7 @@ export default function Information() {
                 ¡Trade Alerts MX es la mejor alternativa en educación de Trading!
                 Somos un equipo experimentado con los que aprenderás
                 detalladamente a operar de manera Inteligente controlando tus
-                emociones con las mejores herramientas en el mercado. Seras
-                capaz de generar ganancias diarias consistentes.
+                inversiones con las mejores herramientas en el mercado.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (

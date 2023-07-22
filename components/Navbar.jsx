@@ -10,10 +10,10 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Sobre Nosotros", page: '/' },
-  { name: "Precios", page: '/precios'},
-  { name: "Resultados", page: '/resultados' },
-  { name: "Cuenta Discrecional", page: '/cuenta' },
+  { name: "Sobre Nosotros", page: "/" },
+  { name: "Precios", page: "/precios" },
+  { name: "Resultados", page: "/resultados" },
+  { name: "Cuenta Discrecional", page: "/cuenta" },
 ];
 
 export default function Navbar() {
@@ -33,8 +33,8 @@ export default function Navbar() {
               className="h-10 md:h-12 w-auto"
               src={logo}
               alt="Trading Alerts MX - Logo"
-              width={'auto'}
-              height={'auto'}
+              width={"auto"}
+              height={"auto"}
               priority
             />
           </Link>
@@ -56,21 +56,25 @@ export default function Navbar() {
 
           <div className="hidden lg:flex lg:gap-x-8">
             {navigation.map((item) => (
-              <Link
+              <a
                 key={item.name}
                 href={item.page}
-                className={`text-sm font-medium leading-6 ${ item.page === pathname ? 'text-whitePrimary ' : 'text-gray-400' }`}
+                className={`text-sm font-medium leading-6 ${
+                  item.page === pathname
+                    ? "text-whitePrimary "
+                    : "text-gray-400"
+                }`}
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-            <Button text={"Suscribete"} />
+            <Button text={"Suscribirme"} />
           </div>
         </nav>
-        <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog as="main" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <Dialog.Panel
             focus="true"
             className="fixed inset-0 z-10 overflow-y-auto bg-[#101010] px-4 py-6 md:py-4 lg:hidden md:px-10"
@@ -90,8 +94,8 @@ export default function Navbar() {
                   className="h-10 md:h-12 w-auto"
                   src={logo}
                   alt="Trading Alerts MX - Logo"
-                  height={'auto'}
-                  width={'auto'}
+                  height={"auto"}
+                  width={"auto"}
                   priority
                 />
               </a>
@@ -100,13 +104,17 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <Link
+                    <a
                       key={item.name}
                       href={item.page}
-                      className={`-mx-3 block py-2 px-3 text-sm font-medium leading-7 text-gray-400 hover:bg-gray-400/10 ${ item.page === pathname ? 'text-whitePrimary bg-gray-400/10' : 'text-gray-400 hover:bg-gray-400/10'}`}
+                      className={`-mx-3 block py-2 px-3 text-sm font-medium leading-7 text-gray-400 hover:bg-gray-400/10 ${
+                        item.page === pathname
+                          ? "text-whitePrimary bg-gray-400/10"
+                          : "text-gray-400 hover:bg-gray-400/10"
+                      }`}
                     >
                       {item.name}
-                    </Link>
+                    </a>
                   ))}
                 </div>
                 <div className="py-2">
@@ -114,7 +122,7 @@ export default function Navbar() {
                     href="#"
                     className="mt-4 block rounded-md py-2.5 px-3 text-sm font-medium leading-6 text-whitePrimary bg-purpleLogo text-center"
                   >
-                    Suscribete
+                    Suscribirme
                   </a>
                 </div>
               </div>
